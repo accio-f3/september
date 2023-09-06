@@ -139,18 +139,18 @@
 
 // console.log(user.ref());
 
-const user = {
-    nam: 'pc',
-    logMessage(){
-        console.log(this);
-    }
-}
+// const user = {
+//     nam: 'pc',
+//     logMessage(){
+//         console.log(this);
+//     }
+// }
 
-setTimeout(user.logMessage,1000);
+// setTimeout(user.logMessage,1000);
 
-setTimeout(()=>{
-    user.logMessage();
-},1000);
+// setTimeout(()=>{
+//     user.logMessage();
+// },1000);
 
 // obj.fn()
 
@@ -159,3 +159,42 @@ setTimeout(()=>{
 
 
 // window.testFn();
+
+// let user = {
+//     nam:'pc',
+//     age: 23,
+//     getDetails(){
+//         // any this keyword inside getDetails
+//         // is user object
+//         const nestedArrow = function abc(){ 
+//             console.log(this);
+//         };
+//         nestedArrow();
+//     }
+// }
+
+// user.getDetails();
+
+// for normal functions
+// always look for
+// obj.fn() (the answer most probably is obj)
+
+
+// let user = {
+//     nam:'pc',
+//     age: 23,
+//     getDetails(){
+//         // any this keyword inside getDetails
+//         // is user object
+//         const nestedArrow = () => { 
+//             console.log(this);
+//         };
+//         nestedArrow();
+//     }
+// }
+
+// user.getDetails();
+
+// for arrow fns always look for outer normal fn
+// and then find the this keyword of outer normal
+// fns
