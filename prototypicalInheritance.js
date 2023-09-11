@@ -27,4 +27,3 @@ obj1.__proto__ = obj2;
 
 
 obj1.getDetails();
-
