@@ -49,13 +49,12 @@ console.log(newIntro('asdfgh'));
 // oldFunc.call(obj);
 
 
-
 delete Function.prototype.bind;
 
 Function.prototype.bind = function (object, ...fixedArgs) {
     const oldFn = this;
     const newFunc = function (...nonFixedArgs) {
-        return oldFn.call(obj, ...fixedArgs, ...nonFixedArgs);
+        return oldFn.call(object, ...fixedArgs, ...nonFixedArgs);
     }
     return newFunc;
 }
