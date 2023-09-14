@@ -1,11 +1,26 @@
 // make first letter of constructor func as CAPS
-function CreateCustomer(nam,branch,accountBalance){
-
+function CreateCustomer(nam, branch, accountBalance) {
+    this.nam = nam;
+    this.branch = branch;
+    this.accountBalance = accountBalance;
+    // this.withdraw = function (amount) {
+    //     this.accountBalance -= amount;
+    // }
 }
 // new key work handles 'new' memory creation
+CreateCustomer.prototype.withdraw = function (amount) {
+    this.accountBalance -= amount;
+}
 
-const customer = new CreateCustomer('pc','hdfc',200);
-console.log(customer.__proto__);
+const customer1 = new CreateCustomer('pc', 'hdfc', 200);
+console.log(customer1);
+const customer2 = new CreateCustomer('amir', 'icici', 20000);
+console.log(customer2);
+
+
+// a new memory is created
+// and constructor function is called
+// as a method of this new memory
 
 
 
