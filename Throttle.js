@@ -18,6 +18,9 @@ function shotGunFireHandle(){
 // 2. make a generic function that modify any function
 // aaloo -> sona
 
+// Throttle Fn -> it's a technique to limit the execution of an event
+// when this event triggers continuesly due to user's actions
+
 const throttleFn = (callBackFn, cooldownTime) => {
     let lastExeFnTime = 0; //at t = 0 a function has been executed
     return function(...args){
