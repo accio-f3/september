@@ -1,0 +1,30 @@
+#grandParent {
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+
+#parent {
+    margin: 75px;
+    border: 1px solid;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#child {
+    border: 1px solid;
+    margin: 35px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+
+#childKaChild{
+    border: 1px solid;
+    margin: 12px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
